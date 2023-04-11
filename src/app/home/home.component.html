@@ -1,25 +1,26 @@
-<div >
-<p *ngIf="user1" class="header">User 1 turn</p>
-<p *ngIf="user2" class="header" >User 2 turn</p>
-<div class="block" >
-<table >
-	<tr>
-		<td id="11"  (click)="clicked($event)"></td>
-		<td id="12" (click)="clicked($event)"></td>
-		<td id="13" (click)="clicked($event)"></td>
-	</tr>
-	<tr>
-		<td id="21" (click)="clicked($event)"></td>
-		<td id="22" (click)="clicked($event)"></td>
-		<td id="23" (click)="clicked($event)"></td>
-	</tr>
-	<tr>
-		<td id="31" (click)="clicked($event)"></td>
-		<td id="32" (click)="clicked($event)"></td>
-		<td id="33" (click)="clicked($event)"></td>
-	</tr>
-</table>
-</div>
-<p *ngIf="messageError">{{messageError}}</p>
-<p *ngIf="messageGame">{{messageGame}}</p>
+<div>
+	<p *ngIf="user1" class="header">User 1 turn</p>
+	<p *ngIf="user2" class="header">User 2 turn</p>
+	<!-- <div class="block" > -->
+	<div>
+		<table>
+			<tr>
+				<td id="11" (click)="clicked($event)"></td>
+				<td id="12" (click)="clicked($event)"></td>
+				<td id="13" (click)="clicked($event)"></td>
+			</tr>
+			<tr>
+				<td id="21" (click)="clicked($event)"></td>
+				<td id="22" (click)="clicked($event)"></td>
+				<td id="23" (click)="clicked($event)"></td>
+			</tr>
+			<tr>
+				<td id="31" (click)="clicked($event)"></td>
+				<td id="32" (click)="clicked($event)"></td>
+				<td id="33" (click)="clicked($event)"></td>
+			</tr>
+		</table>
+	</div>
+	<p *ngIf="messageError">{{messageError}}</p>
+	<p *ngIf="messageGame">{{messageGame}}</p>
 </div>

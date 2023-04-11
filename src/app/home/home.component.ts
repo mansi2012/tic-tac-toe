@@ -22,12 +22,11 @@ export class HomeComponent implements OnInit {
 
   clicked(ev) {
     const currentcell = document.getElementById(ev.target.id);
-    console.log('currentcell: ', currentcell);
     if (currentcell.innerText != '') {
       this.messageError = 'Can not clicked'
     }
     else {
-      currentcell.innerText = this.user1 ? 'circle' : 'cross';
+      currentcell.innerHTML = this.user1 ? 'O' : 'X';
       this.lstFinal.push({ id: ev.target.id, user: this.user1 ? '1' : '2' })
       this.messageError = '';
     }
@@ -93,10 +92,6 @@ export class HomeComponent implements OnInit {
           }
 
         });
-
-        console.log(lstcount1,'ppppp');
-        console.log(lstcount2,'2222');
-        console.log(lstcount3,'3333333');
 
         let gameresult3 = lstcount1.filter(x => x == '1').length == 3 ? true : lstcount1.filter(x => x == '0').length == 3 ? true : false;
         if(gameresult3){

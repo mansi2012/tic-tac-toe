@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tic-tac-toe';
+  sideMenuOpened : boolean = false;
+  sideMenu(): void{
+    this.sideMenuOpened = !this.sideMenuOpened;
+  }
 }
